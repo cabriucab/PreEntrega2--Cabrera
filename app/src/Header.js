@@ -1,6 +1,8 @@
 import React from "react";
-import NavBar from "./components/NavBar";
+import NavBar from "./NavBar";
 import imagelogo from "./103833634_255301082445857_6462337026877186153_n.jpg";
+import {Link} from "react-router-dom"
+
 
 function Header() {
 
@@ -15,7 +17,7 @@ return (
 
             <div className="menuSuperior__menu">
                 <div className="menu__logo">
-                    <a href="#"><img src={imagelogo}/></a>
+                    <Link to="/"><img src={imagelogo}/></Link>
 
 </div>
 

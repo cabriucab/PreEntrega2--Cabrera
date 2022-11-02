@@ -16,6 +16,7 @@ header {
 	animation-iteration-count:intial;
 	animation-duration: 3s;
 	padding-left: 1rem;
+	margin-right: 70rem;
 	img {
 		width: 100%;
 	}
@@ -28,7 +29,7 @@ header {
 	width: 100%;
 	display: flex;
 	align-content: flex-start;
-	justify-content: flex-start;
+	justify-content:center;
 	align-items: center;
 	//box-shadow: $sombreado;
 }
@@ -104,11 +105,11 @@ header {
 	position: absolute;
 	left: 0;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	align-content: flex-start;
 	justify-content: space-between;
 	align-items: center;
-	width: 250%;
+	
 	background-color: $colorprimario;
 	display: none;
 	.sub-link {
@@ -280,4 +281,19 @@ text-align: center;
 		}
 		
 	}
+}
+
+.botonNro{
+	background: red;
+	color: white;
+	width: 18px;
+	height: 16px;
+	border-radius: 1000px;
+	position: relative;
+	margin-left: 3rem;
+margin-bottom: -1rem;
+p{
+	text-align: center;
+}
+
 }

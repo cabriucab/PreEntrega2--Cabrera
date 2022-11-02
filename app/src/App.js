@@ -1,22 +1,23 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import ItemListContainer from "./components/ItemListContainer";
+import Main from "./Main";
+import ItemListContainer from "./ItemListContainer";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
 return(
 <>
 
-<Header />
-<ItemListContainer
-nombre="Martin Cabrera"
-/>
+<BrowserRouter>
 
-<Footer
-autor="Martin Cabrera"
-anios="2022"
+<Header/>   
+<Main/>
+<Footer/>
 
-/>
+
+</BrowserRouter>
+
 
 </>
 
