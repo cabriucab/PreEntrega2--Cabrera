@@ -1,31 +1,33 @@
 import React from 'react';
-import { Routes , Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import Home from './Home';
 import Carrito from "./Carrito"
 import ItemListContainer from './ItemListContainer';
+import ItemDetailContainer from './itemDetailContainer';
 
 
 export default function Main() {
   return (
-   <main>
-    <Routes>
+    <main>
+      <Routes>
 
-    <Route path='/' element={<Home/>}/>
-                
-                <Route path="/productos" element={<ItemListContainer/>}/>
+        <Route path='/' element={<Home />} />
 
-                <Route path="/productos/:categoria"  element={<ItemListContainer/>}/>
-                
-                <Route path='/carrito' element={<Carrito/>}/>
+        <Route path="/productos" element={<ItemListContainer />} />
 
-                <Route path='*' element={<h1>404</h1>}/>
+        <Route path="/productos/:categoria" element={<ItemListContainer />} />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+        <Route path='/carrito' element={<Carrito />} />
 
 
-    </Routes>
+        <Route path='*' element={<h1>404</h1>} />
 
 
-   </main>
-    
+      </Routes>
+
+
+    </main>
+
 
 
   )

@@ -21,7 +21,7 @@ return(
 
     <ul className="navegador__itemsDeMenu">
         <li className="itemsDeMenu__link"> <Link to="/ ">Home</Link></li>
-        <li className="itemsDeMenu__link"> <Link to="/productos">Productos</Link>
+        <li className="itemsDeMenu__link"> <Link to="#">Productos</Link>
             <ul className="sub-menu-carta">
             <li className="sub-link"><Link to="/productos">TODOS </Link></li>
                 <li className="sub-link"><Link to="/productos/CARNES">Carnes </Link></li>

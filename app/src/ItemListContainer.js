@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import productosInicialesJason from "./components/menues.json"
-
+import ItemList from "./ItemList"
 
 
 
@@ -48,7 +48,7 @@ useEffect(() => {
         ObtenerProductoId(categoria) 
         .then(res => {
             setItems(res)
-            console.log({categoria})
+            
         })
         .catch(err => {
             console.log (err)
@@ -69,9 +69,9 @@ useEffect(() => {
 
 return (
     <div>
-        <h2>Productos</h2>
+        <h2 className="tituloProductos">Productos</h2>
         
-        {items.length == 0 ? <h1>Cargando...</h1> : console.table({items})}
+        {items.length == 0 ? <h1>Cargando...</h1> : <ItemList items={items} />}
     </div>
   
 )
