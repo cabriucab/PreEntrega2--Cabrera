@@ -33,7 +33,7 @@ const ItemCount = ({handleOnAdd}) => {
             <div className="contador">
                 
 
-            <Button className="mas" variant="outlined" color='success' size='small' onClick={handleSumar}>
+            <Button className="mas" variant="outlined" color='success' size='large' onClick={handleSumar}>
                  +
 
                </Button>
@@ -41,7 +41,7 @@ const ItemCount = ({handleOnAdd}) => {
                 <h3 className="nro">{count}</h3>
 
 
-                <Button className="menos" variant="outlined" color='success' size='small' onClick={handleRestar}>
+                <Button className="menos" variant="outlined" color='success' size='large' onClick={handleRestar}>
                  -
                </Button>
               

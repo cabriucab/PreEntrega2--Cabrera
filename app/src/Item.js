@@ -39,7 +39,7 @@ const Item = ({ id, descripcion, categoria, precio, imagen }) => {
 
         <div className='botonCard'>
           <Button id="botonCompra" variant="contained" color='success' size='large'>
-            <Link to={`/item/${id}`} >
+          <Link to={`/item/${id}`} >
               Ver detalle
             </Link>
 

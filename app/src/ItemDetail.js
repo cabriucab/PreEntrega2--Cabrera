@@ -39,11 +39,17 @@ const ItemDetail = ({ id, descripcion, categoria, precio, imagen }) => {
             </CardContent>
 
             <div className='botonCard'>
-               <Button variant="contained" color='success' size='large'>
+            <div className="btnComrar">
+            <Button variant="contained" color='success' size='large'>
                   Comprar
 
                </Button>
-               <ItemCount/>
+            </div>
+            <div>
+            <ItemCount/>
+            </div>
+              
+              
             </div>
 
 

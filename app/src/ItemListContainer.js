@@ -44,7 +44,7 @@ const ObtenerProductoId = (id) => {
 useEffect(() => {
 
     if(categoria){
-
+        setItems([])
         ObtenerProductoId(categoria) 
         .then(res => {
             setItems(res)
