@@ -10,12 +10,11 @@ import { Link } from "react-router-dom"
 
 
 
-const Item = ({ id, descripcion, categoria, precio, imagen }) => {
+const Item = ({ id, descripcion, categoria, precio, imagen}) => {
 
   return (
 
  
-
     <div className='carta'>
 
       <Card sx={{ maxWidth: 345 }}>

@@ -1,30 +1,38 @@
-import React from "react";
+
 import Header from "./Header";
 import Footer from "./Footer";
 import Main from "./Main";
-import ItemListContainer from "./ItemListContainer";
 import { BrowserRouter } from "react-router-dom";
+import CustomProvider from "./CustomProvider";
+
+
 
 function App() {
-return(
-<>
-
-<BrowserRouter>
-
-<Header/>   
-<Main/>
-<Footer/>
 
 
-</BrowserRouter>
+    return (
+        
+            <CustomProvider children={
+
+                <BrowserRouter>
+                    <Header />
+                    <Main />
+                    <Footer />
+                </BrowserRouter>
+
+            } />
 
 
-</>
+    
 
 
 
 
-)
+
+
+
+
+    )
 
 
 

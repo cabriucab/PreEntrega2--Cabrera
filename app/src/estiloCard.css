@@ -1,0 +1,62 @@
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.carta {
+  margin: 2rem 2rem 2rem 2rem;
+  box-shadow: 10px 5px 5px #726c6c; }
+
+.css-46bh2p-MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  flex-wrap: nowrap;
+  width: 20rem;
+  height: 20rem; }
+
+.botonCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem; }
+
+.contenedorDetalle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem; }
+
+.tituloProductos {
+  text-align: center; }
+
+.contador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  margin-right: 1rem; }
+
+.css-1k9gzqu-MuiButtonBase-root-MuiButton-root {
+  font: size 2rem;
+  text-decoration: solid; }
+
+#botonCompra {
+  font-size: 2rem;
+  text-transform: initial; }
+  #botonCompra a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem; }
+
+.nro {
+  font-size: 2rem;
+  margin: 0 4px 0 4px; }
+
+.btnComrar {
+  margin-left: 1rem; }
+
+/*# sourceMappingURL=estiloCard.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EAEH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,QAAQ;;AAM7B,KAAK;EACJ,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,MAAM;EACf,UAAU,EAAE,OAAO;EACnB,WAAW,EAAC,4BAA4B;;AAE5C,KAAK;EACD,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,OAAO",
+"sources": ["estiloFooter.scss"],
+"names": [],
+"file": "estiloFooter.css"
+}
