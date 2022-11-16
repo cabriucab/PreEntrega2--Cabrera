@@ -22,31 +22,20 @@ export default function CustomProvider({ children }) {
     }, [carrito])
 
 
-    const addProductToCart = (product, number) => {
-        const inCart = carrito.find((productInCart) => productInCart.id === product.id)
+    const agregarProducto = (producto, cantidad) => {
+        const inCart = carrito.find((productoInCart) => productoInCart.id === producto.id)
         if (inCart) {
-            setCarrito(carrito.map((productInCart) => {
-                if (productInCart.id === product.id) {
-                    return { ...inCart, cantidad: inCart.cantidad + number }
-                } else return productInCart
+            setCarrito(carrito.map((productoInCart) => {
+                if (productoInCart.id === producto.id) {
+                    return { ...inCart, cantidad: inCart.cantidad + cantidad }
+                } else return productoInCart
             }))
         } else {
-            setCarrito([...carrito, { ...product, cantidad: number }])
+            setCarrito([...carrito, { ...producto, cantidad: cantidad }])
         }
     }
 
-    const updateProductFromCart = (product) => {
-        const inCart = carrito.find((productInCart) => productInCart.id === product.id)
-        if (inCart.cantidad === 1) {
-            setCarrito(carrito.filter((productInCart) => productInCart.id !== product.id))
-        } else {
-            setCarrito((productInCart) => {
-                if (productInCart.id === product.id) {
-                    return { ...inCart, cantidad: inCart.cantidad - 1 }
-                } else return productInCart
-            })
-        }
-    }
+    
 
     const sumarCantidad = () => {
 
@@ -60,8 +49,7 @@ export default function CustomProvider({ children }) {
     const valorContexto = {
         carrito: carrito,
         total: total,
-        addProductToCart: addProductToCart,
-        updateProductFromCart: updateProductFromCart,
+        agregarProducto: agregarProducto,
         setTotal: setTotal,
         vSumTotal: vSumTotal,
 

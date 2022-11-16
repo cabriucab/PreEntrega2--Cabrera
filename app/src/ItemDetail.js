@@ -14,7 +14,7 @@ import { useContext} from 'react';
 
 const ItemDetail = ({ id, descripcion, categoria, precio, imagen }) => {
 
-const {addProductToCart, total} =useContext(contexto)
+const {agregarProducto, total} =useContext(contexto)
 
 
    return (
@@ -47,7 +47,7 @@ const {addProductToCart, total} =useContext(contexto)
 
             <div className='botonCard'>
             <div className="btnComrar">
-            <Button onClick={() => {addProductToCart({ id, descripcion, categoria, precio, imagen}, total)}} variant="contained" color='success' size='large'>
+            <Button onClick={() => {agregarProducto({ id, descripcion, categoria, precio, imagen}, total)}} variant="contained" color='success' size='large'>
                   Agregar Carrito
 
                </Button> 
