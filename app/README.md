@@ -43,8 +43,8 @@ Si todo funciona correctamente, verás un mensaje en la terminal que dice que tu
 ## Demo ✒️
 
 ![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img1.jpg)
-![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img2.jpg)
-![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img3.jpg)
+![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img2.png)
+![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img3.png)
 ![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img4.jpg)
 ![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img5.jpg)
 
