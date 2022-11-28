@@ -42,10 +42,19 @@ Si todo funciona correctamente, verás un mensaje en la terminal que dice que tu
 
 ## Demo ✒️
 
+### Portada principal
 ![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img1.jpg)
+
+### Productos
 ![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img2.png)
+
+### Detalles de productos
 ![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img3.png)
+
+### Resumen de cuenta
 ![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img4.jpg)
+
+### CheckOut
 ![Image text](https://github.com/cabriucab/TrabajoFinal-Cabrera/blob/main/img5.jpg)
 
 
