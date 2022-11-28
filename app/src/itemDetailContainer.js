@@ -1,8 +1,9 @@
 import ItemDetail from "./ItemDetail"
-import productosInicialesJason from "./components/menues.json"
+import { collection, doc, getDoc } from "firebase/firestore"
+import {db} from "./conexionFirebase"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { CircularProgress } from "@mui/material"
+
 
 const ItemDetailContainer = () => {
 
@@ -12,48 +13,33 @@ const ItemDetailContainer = () => {
 
 
 
-    const ObtenerProductoId = (ids) => {
+    useEffect(()=>{
+        const productosCollection = collection(db, "productos")
+        const refe = doc(productosCollection, id) 
+        const consulta = getDoc(refe)
 
-        let obtencionArticulo = new Promise((res) => {
-            setTimeout(() => {
-                res(productosInicialesJason.filter(item => item.id == ids))
-              
-            
-            
-            }, 2000)
+        consulta
+        .then(res=>{
+            setItems(res.data())
+           
+          
         })
+        .catch(error=>{
+            console.log(error)
+        })
+    })
 
-        return obtencionArticulo
-    }
-
-
-    useEffect(() => {
-
-        ObtenerProductoId(id)
-            .then(res => {
-               
-                setItems(res)
-
-
-            })
-            .catch(err => {
-                console.log(err)
-            })
-
-
-    }, [id])
 
 
     return (
         <>
          
-            {
+          
                  
-                items.map((item) => {
-                    return <ItemDetail key={item.id} {...item} /> 
-                })
+               <ItemDetail key={id} {...items} /> 
+           
 
-            }
+          
 
 
 

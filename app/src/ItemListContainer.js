@@ -3,9 +3,8 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import productosInicialesJason from "./components/menues.json"
 import ItemList from "./ItemList"
-
-
-
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { db } from "./conexionFirebase"
 
 
 const ItemListContainer=() =>{
@@ -16,67 +15,46 @@ const {categoria} = useParams()
 
 
 
-const ObtenerProducto = () => {
-
-    let simulacionPedido = new Promise((res) => {
-        setTimeout(() => {
-            res(productosInicialesJason)
-        }, 2000)
-    })
-
-    return simulacionPedido
-}
-
-const ObtenerProductoId = (id) => {
-    
-    let simulacionPedido = new Promise((res) => {
-        setTimeout(() => {
-            res(productosInicialesJason.filter(item=>item.categoria == id))
-        }, 2000)
-    })
-
-    return simulacionPedido
-}
-
-
-
-
 useEffect(() => {
 
-    if(categoria){
-        setItems([])
-        ObtenerProductoId(categoria) 
-        .then(res => {
-            setItems(res)
-            
-        })
-        .catch(err => {
-            console.log (err)
-        })
+    const productosCollection = collection(db, "productos")
 
-    }else{
+    if (categoria) {
+        const filtro = query(productosCollection, where("categoria", "==", categoria))
+        const consulta = getDocs(filtro)
+        consulta
+            .then((resultado) => {
+                const productos = resultado.docs.map(doc => ({ ...doc.data(), id: doc.id }))
+                setItems(productos)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
 
-        ObtenerProducto()
-        .then((res) => {
-            setItems(res)
-        })
-        .catch((error) => {
-            console.log (error)
-        })
+    } else {
+        const consulta = getDocs(productosCollection)
+        consulta
+            .then((resultado) => {
+                const productos = resultado.docs.map(doc => ({ ...doc.data(), id: doc.id }))
+                setItems(productos)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+
     }
 
 }, [categoria])
 
 return (
     <div>
-        <h2 className="tituloProductos">Productos</h2>
-        
+        <h2>Productos</h2>
         {items.length == 0 ? <h1>Cargando...</h1> : <ItemList items={items} />}
     </div>
-  
 )
 
 }
+
 
 
 export default ItemListContainer

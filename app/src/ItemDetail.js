@@ -1,7 +1,6 @@
 
 
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
@@ -9,12 +8,15 @@ import Typography from '@mui/material/Typography';
 import ItemCount from './ItemCount';
 import { contexto } from './CustomProvider';
 import { useContext} from 'react';
+import { useParams } from 'react-router-dom';
+import { Link } from "react-router-dom"
+import './estiloCarro.scss';
 
 
-
-const ItemDetail = ({ id, descripcion, categoria, precio, imagen }) => {
+const ItemDetail = ({ ids, descripcion, categoria, precio, imagen }) => {
 
 const {agregarProducto, total} =useContext(contexto)
+const {id }= useParams()
 
 
    return (
@@ -26,7 +28,7 @@ const {agregarProducto, total} =useContext(contexto)
      <h1>DETALLE DE PRODUCTO</h1>
      
       <div className='carta'>
-         <Card sx={{ maxWidth: 345 }}>
+         <Card sx={{ maxWidth: 250 }}>
             <CardMedia
                component="img"
                height="250"
@@ -48,10 +50,11 @@ const {agregarProducto, total} =useContext(contexto)
             <div className='botonCard'>
             <div className="btnComrar">
             <Button onClick={() => {agregarProducto({ id, descripcion, categoria, precio, imagen}, total)}} variant="contained" color='success' size='large'>
-                  Agregar Carrito
+                 AGREGAR A CARRITO
 
                </Button> 
             </div>
+            
             <div>
             <ItemCount />
             </div>
@@ -59,7 +62,15 @@ const {agregarProducto, total} =useContext(contexto)
               
             </div>
 
+            <div className="btnVolver">
+<Button variant="contained" color='warning' size='large'>
+<Link className='link' to={`/productos`} >
+SEGUIR COMPRANDO
+</Link>
 
+</Button>
+  
+</div>
          </Card>
       </div>
       </div>
@@ -70,7 +81,6 @@ const {agregarProducto, total} =useContext(contexto)
    )
 }
 
-//paso 2 ) el comp hijo recibe el callback como prop
 
 
 export default ItemDetail

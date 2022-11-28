@@ -1,0 +1,218 @@
+#imagenCarro {
+    border-radius: 1rem;
+    width: 10rem;
+    box-shadow: 10px 5px 5px #726c6c;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 13px;
+    width: 60%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #2e7d32;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+    color: rgb(249, 250, 249);
+}
+
+td {
+    padding: 8px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: rgb(18, 18, 19);
+    border-top: 1px solid transparent;
+}
+
+tr:hover td {
+    background: #a9f17e;
+    color: rgb(16, 20, 13);
+}
+
+.Principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Total {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+#titulo {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#botonCompra {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin: 2rem auto auto auto
+}
+
+.form {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+
+}
+
+.botonCompra1 {
+
+
+    margin-top: 2rem;
+    background-color: green;
+    color: white;
+    size: 2rem;
+   
+}
+
+
+
+#base {
+
+    margin-top: 2rem;
+
+}
+
+#formCheck {
+
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input.form-control,
+input.form-control:focus {
+    background: #F0F0FF;
+}
+
+.error {
+
+    color: red;
+    font-size: 1.5rem;
+}
+
+.itemLabel {
+
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-top: 1rem;
+
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 10px 5px 5px #726c6c;
+    border: 1px solid #000;
+ padding-bottom: 2rem;
+
+
+
+}
+
+.botones {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.btnForm {
+    margin-bottom: 1rem;
+    width: 150%;
+    text-align: center;
+    background-color: #2e7d32;
+    color: #e8edff;
+    box-shadow: 10px 5px 5px #726c6c;
+    border-radius: 0.5rem;
+    size: 1.5rem;
+}
+
+#formCheck{
+margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+#bntBorrar{
+margin-top: 1rem;
+}
+
+
+.btnVolver{
+
+display: flex;
+justify-content: center;
+margin-bottom: 1rem;
+
+}
+
+.link{
+text-decoration: none;
+color:white;
+
+
+}
+
+

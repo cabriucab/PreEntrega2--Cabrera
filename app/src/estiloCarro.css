@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+#imagenCarro {
+  border-radius: 1rem;
+  width: 10rem;
+  -webkit-box-shadow: 10px 5px 5px #726c6c;
+          box-shadow: 10px 5px 5px #726c6c;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 13px;
+  width: 60%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: center;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 8px;
+  background: #2e7d32;
+  border-top: 4px solid #aabcfe;
+  border-bottom: 1px solid #fff;
+  color: #f9faf9;
+}
+
+td {
+  padding: 8px;
+  background: #e8edff;
+  border-bottom: 1px solid #fff;
+  color: #121213;
+  border-top: 1px solid transparent;
+}
+
+tr:hover td {
+  background: #a9f17e;
+  color: #10140d;
+}
+
+.Principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+#titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#botonCompra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin: 2rem auto auto auto;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 40%;
+}
+
+.botonCompra1 {
+  margin-top: 2rem;
+  background-color: green;
+  color: white;
+  size: 2rem;
+}
+
+#base {
+  margin-top: 2rem;
+}
+
+#formCheck {
+  margin-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input.form-control,
+input.form-control:focus {
+  background: #F0F0FF;
+}
+
+.error {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.itemLabel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 1rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 10px 5px 5px #726c6c;
+          box-shadow: 10px 5px 5px #726c6c;
+  border: 1px solid #000;
+  padding-bottom: 2rem;
+}
+
+.botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.btnForm {
+  margin-bottom: 1rem;
+  width: 150%;
+  text-align: center;
+  background-color: #2e7d32;
+  color: #e8edff;
+  -webkit-box-shadow: 10px 5px 5px #726c6c;
+          box-shadow: 10px 5px 5px #726c6c;
+  border-radius: 0.5rem;
+  size: 1.5rem;
+}
+
+#formCheck {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#bntBorrar {
+  margin-top: 1rem;
+}
+
+.btnVolver {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=estiloCarro.css.map */

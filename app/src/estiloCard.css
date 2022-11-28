@@ -1,62 +1,111 @@
 .productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 .carta {
   margin: 2rem 2rem 2rem 2rem;
-  box-shadow: 10px 5px 5px #726c6c; }
+  -webkit-box-shadow: 10px 5px 5px #726c6c;
+          box-shadow: 10px 5px 5px #726c6c;
+}
 
 .css-46bh2p-MuiCardContent-root {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 16px;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 20rem;
-  height: 20rem; }
+  height: 20rem;
+}
 
 .botonCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 
 .contenedorDetalle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6rem; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6rem;
+}
 
 .tituloProductos {
-  text-align: center; }
+  text-align: center;
+}
 
 .contador {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 1rem;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+}
 
 .css-1k9gzqu-MuiButtonBase-root-MuiButton-root {
   font: size 2rem;
-  text-decoration: solid; }
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
 
 #botonCompra {
   font-size: 2rem;
-  text-transform: initial; }
-  #botonCompra a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem; }
+  text-transform: initial;
+}
+
+#botonCompra a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
 
 .nro {
   font-size: 2rem;
-  margin: 0 4px 0 4px; }
+  margin: 0 4px 0 4px;
+}
 
 .btnComrar {
-  margin-left: 1rem; }
-
+  margin-left: 1rem;
+}
 /*# sourceMappingURL=estiloCard.css.map */

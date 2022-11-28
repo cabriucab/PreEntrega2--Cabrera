@@ -1,11 +1,18 @@
 import React from 'react'
-import { createContext } from "react";
 import { useState, useEffect } from "react";
-
+import { createContext, useContext } from "react"
 
 
 export const contexto = createContext()
 const { Provider } = contexto;
+
+
+
+
+
+export const useCarrito = () => {
+    return useContext(contexto)
+}
 
 
 export default function CustomProvider({ children }) {
@@ -13,13 +20,22 @@ export default function CustomProvider({ children }) {
     const [carrito, setCarrito] = useState([])
     const [total, setTotal] = useState(0)
     const [vSumTotal, setVSumTotal] = useState(0)
+    const [SumaPrecios,setSumaPrecios]= useState(0)
 
 
     useEffect(() => {
-        console.table(carrito)
+       
         sumarCantidad()
 
     }, [carrito])
+
+    const vaciarCarrito = () => {
+        setCarrito([])
+        setTotal(0)
+        setSumaPrecios(0)
+    }
+
+
 
 
     const agregarProducto = (producto, cantidad) => {
@@ -32,10 +48,15 @@ export default function CustomProvider({ children }) {
             }))
         } else {
             setCarrito([...carrito, { ...producto, cantidad: cantidad }])
+
+           
+          // setCantidadTotal(cantidadTotal + cantidad)
+
         }
+        setSumaPrecios(SumaPrecios+producto.precio * cantidad)
     }
 
-    
+
 
     const sumarCantidad = () => {
 
@@ -46,13 +67,20 @@ export default function CustomProvider({ children }) {
     };
 
 
+    const isInCart = (id) => {
+        //return true o false
+        return { inCart: false, item: {}, index: 0 }
+    }
+
+
     const valorContexto = {
         carrito: carrito,
         total: total,
         agregarProducto: agregarProducto,
         setTotal: setTotal,
         vSumTotal: vSumTotal,
-
+        vaciarCarrito: vaciarCarrito,
+        SumaPrecios: SumaPrecios,
 
     }
 
